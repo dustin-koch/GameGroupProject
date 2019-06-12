@@ -13,6 +13,7 @@
 		CAA80BF822B1799200AC22BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA80BF722B1799200AC22BB /* Assets.xcassets */; };
 		CAA80BFB22B1799200AC22BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA80BF922B1799200AC22BB /* LaunchScreen.storyboard */; };
 		CAA80C0322B1A9C300AC22BB /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA80C0222B1A9C300AC22BB /* Question.swift */; };
+		CAA80C0622B1B17D00AC22BB /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA80C0522B1B17D00AC22BB /* QuestionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CAA80BFA22B1799200AC22BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAA80BFC22B1799200AC22BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAA80C0222B1A9C300AC22BB /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		CAA80C0522B1B17D00AC22BB /* QuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +64,26 @@
 				CAA80BF722B1799200AC22BB /* Assets.xcassets */,
 				CAA80BF922B1799200AC22BB /* LaunchScreen.storyboard */,
 				CAA80BFC22B1799200AC22BB /* Info.plist */,
-				CAA80C0222B1A9C300AC22BB /* Question.swift */,
+				CAA80C0422B1AE8700AC22BB /* Models */,
+				CAA80C0722B1B18100AC22BB /* Model Controllers */,
 			);
 			path = TeamGame;
+			sourceTree = "<group>";
+		};
+		CAA80C0422B1AE8700AC22BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAA80C0222B1A9C300AC22BB /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CAA80C0722B1B18100AC22BB /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAA80C0522B1B17D00AC22BB /* QuestionController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +160,7 @@
 				CAA80C0322B1A9C300AC22BB /* Question.swift in Sources */,
 				CAA80BF322B1799100AC22BB /* ViewController.swift in Sources */,
 				CAA80BF122B1799100AC22BB /* AppDelegate.swift in Sources */,
+				CAA80C0622B1B17D00AC22BB /* QuestionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
