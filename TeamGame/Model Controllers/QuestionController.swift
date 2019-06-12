@@ -43,3 +43,14 @@ class QuestionController {
         }.resume()
     }
 }//END OF CLASS
+
+extension QuestionController {
+    func makeQuestionsArray(question: SpecificQuestion) -> [String] {
+        var array: [String] = []
+        array.append(question.correctAnswer)
+        for question in question.incorrectAnswers {
+            array.append(question)
+        }
+        return array.shuffled()
+    }
+}
