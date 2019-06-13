@@ -48,9 +48,9 @@
 		9323EC7922B2A09F00122DED /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9323EC7E22B2A1BA00122DED /* SplashViewController.swift */,
 				9323EC7A22B2A0FD00122DED /* QuestionViewController.swift */,
 				9323EC7C22B2A15A00122DED /* ChampionsViewController.swift */,
-				9323EC7E22B2A1BA00122DED /* SplashViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
