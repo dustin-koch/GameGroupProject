@@ -23,9 +23,10 @@ class QuestionController {
     
     //MARK: - CRUD Functions
     
-    func restartGame() {
+    func resetGame() {
         questionNumber = 0
         score = 0
+        userName = ""
     }
     
     func nextQuestion(answerCorrectOrNot: Bool) {
