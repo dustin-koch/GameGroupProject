@@ -30,11 +30,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRIVIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7I7-IL-UO4">
-                                <rect key="frame" x="20" y="289" width="374" height="146"/>
+                                <rect key="frame" x="20" y="289" width="374" height="328"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="146" id="ILP-bs-b4b"/>
                                 </constraints>
-
                                 <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="55"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -219,6 +218,9 @@
                                                 <state key="normal" title="View Leaderboard">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="leaderboardTapped:" destination="KWh-kz-VXH" eventType="touchUpInside" id="Sy2-7A-utJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -234,12 +236,26 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2u-L8-C6D">
-                                <rect key="frame" x="140.5" y="674" width="133" height="36"/>
+                                <rect key="frame" x="166" y="674" width="82" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <state key="normal" title="Continue Playing">
+                                <state key="normal" title="Play Again">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="playAgainTapped:" destination="KWh-kz-VXH" eventType="touchUpInside" id="hJx-Yy-0no"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sG5-iG-VAv">
+                                <rect key="frame" x="161" y="735" width="92" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Quit / Reset">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="quitTapped:" destination="KWh-kz-VXH" eventType="touchUpInside" id="7xP-mp-Q3r"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.56059593090000004" green="0.059034424010000003" blue="0.83891272670000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -247,6 +263,8 @@
                             <constraint firstItem="hfc-O4-8ob" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="l2u-L8-C6D" secondAttribute="trailing" id="1Zu-6d-okM"/>
                             <constraint firstItem="c4A-rL-uLA" firstAttribute="leading" secondItem="0ea-0c-9tv" secondAttribute="leadingMargin" id="LUc-Md-0Lh"/>
                             <constraint firstItem="l2u-L8-C6D" firstAttribute="top" secondItem="c4A-rL-uLA" secondAttribute="bottom" constant="48" id="Vr6-Kb-pXL"/>
+                            <constraint firstItem="sG5-iG-VAv" firstAttribute="top" secondItem="l2u-L8-C6D" secondAttribute="bottom" constant="25" id="Yiz-oT-PAB"/>
+                            <constraint firstItem="sG5-iG-VAv" firstAttribute="centerX" secondItem="l2u-L8-C6D" secondAttribute="centerX" id="bjk-tE-NYm"/>
                             <constraint firstItem="l2u-L8-C6D" firstAttribute="centerX" secondItem="c4A-rL-uLA" secondAttribute="centerX" id="j5o-K0-HpZ"/>
                             <constraint firstItem="l2u-L8-C6D" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hfc-O4-8ob" secondAttribute="leading" id="jHo-Td-Bh3"/>
                             <constraint firstItem="hfc-O4-8ob" firstAttribute="bottom" secondItem="c4A-rL-uLA" secondAttribute="bottom" constant="236" id="oeG-yv-Sfb"/>
@@ -255,6 +273,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hfc-O4-8ob"/>
                     </view>
+                    <connections>
+                        <outlet property="userLabel" destination="4gj-b8-je8" id="oMD-Fe-II2"/>
+                        <outlet property="winnerLabel" destination="ycB-oh-Ycc" id="cSU-Al-BlR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KzG-MD-ARu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
