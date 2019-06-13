@@ -11,7 +11,6 @@
 		9323EC7D22B2A15A00122DED /* ChampionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9323EC7C22B2A15A00122DED /* ChampionsViewController.swift */; };
 		9323EC7F22B2A1BA00122DED /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9323EC7E22B2A1BA00122DED /* SplashViewController.swift */; };
 		CAA80BF122B1799100AC22BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA80BF022B1799100AC22BB /* AppDelegate.swift */; };
-		CAA80BF322B1799100AC22BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA80BF222B1799100AC22BB /* ViewController.swift */; };
 		CAA80BF622B1799100AC22BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA80BF422B1799100AC22BB /* Main.storyboard */; };
 		CAA80BF822B1799200AC22BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA80BF722B1799200AC22BB /* Assets.xcassets */; };
 		CAA80BFB22B1799200AC22BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA80BF922B1799200AC22BB /* LaunchScreen.storyboard */; };
@@ -25,7 +24,6 @@
 		9323EC7E22B2A1BA00122DED /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		CAA80BED22B1799100AC22BB /* TeamGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA80BF022B1799100AC22BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAA80BF222B1799100AC22BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAA80BF522B1799100AC22BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAA80BF722B1799200AC22BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAA80BFA22B1799200AC22BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				CAA80BF022B1799100AC22BB /* AppDelegate.swift */,
-				CAA80BF222B1799100AC22BB /* ViewController.swift */,
 				CAA80BF422B1799100AC22BB /* Main.storyboard */,
 				9323EC7922B2A09F00122DED /* View Controllers */,
 				CAA80BF722B1799200AC22BB /* Assets.xcassets */,
@@ -176,7 +173,6 @@
 			files = (
 				CAA80C0322B1A9C300AC22BB /* Question.swift in Sources */,
 				9323EC7D22B2A15A00122DED /* ChampionsViewController.swift in Sources */,
-				CAA80BF322B1799100AC22BB /* ViewController.swift in Sources */,
 				9323EC7B22B2A0FD00122DED /* QuestionViewController.swift in Sources */,
 				CAA80BF122B1799100AC22BB /* AppDelegate.swift in Sources */,
 				9323EC7F22B2A1BA00122DED /* SplashViewController.swift in Sources */,
