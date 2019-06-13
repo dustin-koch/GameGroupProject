@@ -19,6 +19,7 @@ class QuestionController {
     let questionURL = "https://opentdb.com/api.php?amount=10&type=multiple"
     var questionNumber = 0
     var score = 0
+    var userName = ""
     
     //MARK: - CRUD Functions
     
