@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9323EC7B22B2A0FD00122DED /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9323EC7A22B2A0FD00122DED /* QuestionViewController.swift */; };
 		9323EC7D22B2A15A00122DED /* ChampionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9323EC7C22B2A15A00122DED /* ChampionsViewController.swift */; };
 		9323EC7F22B2A1BA00122DED /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9323EC7E22B2A1BA00122DED /* SplashViewController.swift */; };
+		9323EC9F22B2E2A100122DED /* QuestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9323EC9E22B2E2A100122DED /* QuestionTableViewController.swift */; };
 		CAA80BF122B1799100AC22BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA80BF022B1799100AC22BB /* AppDelegate.swift */; };
 		CAA80BF322B1799100AC22BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA80BF222B1799100AC22BB /* ViewController.swift */; };
 		CAA80BF622B1799100AC22BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA80BF422B1799100AC22BB /* Main.storyboard */; };
@@ -20,9 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9323EC7A22B2A0FD00122DED /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		9323EC7C22B2A15A00122DED /* ChampionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsViewController.swift; sourceTree = "<group>"; };
 		9323EC7E22B2A1BA00122DED /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		9323EC9E22B2E2A100122DED /* QuestionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewController.swift; sourceTree = "<group>"; };
 		CAA80BED22B1799100AC22BB /* TeamGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA80BF022B1799100AC22BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAA80BF222B1799100AC22BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,8 +49,8 @@
 			isa = PBXGroup;
 			children = (
 				9323EC7E22B2A1BA00122DED /* SplashViewController.swift */,
-				9323EC7A22B2A0FD00122DED /* QuestionViewController.swift */,
 				9323EC7C22B2A15A00122DED /* ChampionsViewController.swift */,
+				9323EC9E22B2E2A100122DED /* QuestionTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -175,9 +175,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAA80C0322B1A9C300AC22BB /* Question.swift in Sources */,
+				9323EC9F22B2E2A100122DED /* QuestionTableViewController.swift in Sources */,
 				9323EC7D22B2A15A00122DED /* ChampionsViewController.swift in Sources */,
 				CAA80BF322B1799100AC22BB /* ViewController.swift in Sources */,
-				9323EC7B22B2A0FD00122DED /* QuestionViewController.swift in Sources */,
 				CAA80BF122B1799100AC22BB /* AppDelegate.swift in Sources */,
 				9323EC7F22B2A1BA00122DED /* SplashViewController.swift in Sources */,
 				CAA80C0622B1B17D00AC22BB /* QuestionController.swift in Sources */,

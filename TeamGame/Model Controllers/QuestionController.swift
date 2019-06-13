@@ -48,6 +48,7 @@ class QuestionController {
                 let questions = topLevelDictionary.results
                 self.questionSet = questions
                 completion(questions)
+                print(questions)
             } catch {
                 print(error.localizedDescription)
                 completion(nil)

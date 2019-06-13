@@ -21,11 +21,7 @@ class SplashViewController: UIViewController {
     
     //MARK: - Actions
     @IBAction func startGameTapped(_ sender: UIButton) {
-        QuestionController.sharedInstance.fetchAllQuestions { (questions) in
-            guard let questions = questions else { return }
-            QuestionController.sharedInstance.questionSet = questions
-            print(questions)
-        }
+        
         presentSimpleInputAlert(title: "Let's play trivia!", message: "Enter your name, below, to get started.")
     }
     
@@ -43,9 +39,14 @@ extension SplashViewController {
             guard let name = alertController.textFields?[0].text,
                 !name.isEmpty else { return }
             QuestionController.sharedInstance.userName = name
-            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            guard let nextViewController = storyBoard.instantiateViewController(withIdentifier: "questionView") as? QuestionViewController else { return }
-            self.present(nextViewController, animated: true)
+            QuestionController.sharedInstance.fetchAllQuestions { (questions) in
+                guard let questions = questions else { return }
+                QuestionController.sharedInstance.questionSet = questions
+                print(questions)
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                guard let nextViewController = storyBoard.instantiateViewController(withIdentifier: "questionView") as? QuestionTableViewController else { return }
+                self.present(nextViewController, animated: true)
+            }
         }
         alertController.addAction(dismissAction)
         alertController.addAction(startGameWithNameAction)
