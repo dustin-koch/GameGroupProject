@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Splash View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TeamGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="TeamGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,9 +25,12 @@
                                 <state key="normal" title="START NEW GAME">
                                     <color key="titleColor" red="0.56059593090000004" green="0.059034424010000003" blue="0.83891272670000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="startGameTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ULX-wZ-SEK"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TRIVIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7I7-IL-UO4">
-                                <rect key="frame" x="20" y="289" width="374" height="146"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRIVIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7I7-IL-UO4">
+                                <rect key="frame" x="20" y="411.5" width="374" height="83.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="55"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -41,6 +44,7 @@
                             <constraint firstItem="7I7-IL-UO4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="K8W-Vt-xf9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7I7-IL-UO4" secondAttribute="trailing" constant="20" id="Qo4-NS-Wp5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jvc-fI-t6r" secondAttribute="trailing" constant="20" id="SqV-7d-wld"/>
+                            <constraint firstItem="7I7-IL-UO4" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="owI-52-J5a"/>
                             <constraint firstItem="Jvc-fI-t6r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xdW-2n-Azo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -50,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="9PO-bj-hhC">
             <objects>
-                <viewController id="vhw-YX-mqh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="questionView" id="vhw-YX-mqh" customClass="QuestionViewController" customModule="TeamGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6MX-sb-89b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="711.59420289855075" y="20.758928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Champions View Controller-->
         <scene sceneID="n8g-R3-Hwm">
             <objects>
-                <viewController id="KWh-kz-VXH" sceneMemberID="viewController">
+                <viewController id="KWh-kz-VXH" customClass="ChampionsViewController" customModule="TeamGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0ea-0c-9tv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
