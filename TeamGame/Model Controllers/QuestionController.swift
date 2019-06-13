@@ -17,8 +17,21 @@ class QuestionController {
     //MARK: - Properties
     var questionSet: [SpecificQuestion]?
     let questionURL = "https://opentdb.com/api.php?amount=10&type=multiple"
+    var questionNumber = 0
+    var score = 0
     
     //MARK: - CRUD Functions
+    
+    func restartGame() {
+        questionNumber = 0
+        score = 0
+    }
+    
+    func nextQuestion(answerCorrectOrNot: Bool) {
+        questionNumber += 1
+        answerCorrectOrNot ? (score += 1) : (score += 0)
+    }
+    
     func fetchAllQuestions(completion: @escaping ([SpecificQuestion]?) -> Void) {
         guard let url = URL(string: questionURL) else { completion(nil); return }
         URLSession.shared.dataTask(with: url) { (data, _, error) in
